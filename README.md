@@ -1,26 +1,21 @@
-# Assignment 3 
+# DNA-sequence-analyzer
 
-## Program 1 - secondary_structure_splitter.py
+Python tools for parsing FASTA files, splitting protein secondary structure sequences, and computing nucleotide statistics including GC content.
 
-This script extracts protein sequences
-and secondary structure data from a combined input file
-and creates two separate output files: 'pdb_protein.fasta' and 'pdb_ss.fasta'.
+## Scripts
 
-Usage:
-  python secondary_structure_splitter.py -i input_file.fasta
+1. **secondary_structure_splitter.py** — Extracts protein sequences and secondary structure data from a combined FASTA file into two separate output files: `pdb_protein.fasta` and `pdb_ss.fasta`.
 
-Example:
-  python secondary_structure_splitter.py -i input_file.fasta
+   ```bash
+   python secondary_structure_splitter.py -i input_file.fasta
+   ```
 
-## Program 2 - nt_fasta_stats.py
+2. **nt_fasta_stats.py** — Calculates per-sequence nucleotide statistics (A, G, C, T, N counts, GC%, and length) from a FASTA file and writes results in tab-delimited format.
 
-This script takes a FASTA file as input,
-calculates nucleotide statistics for each sequence,
-and writes the results to an output file in tab-delimited format.
+   ```bash
+   python nt_fasta_stats.py --infile input.fasta --outfile output.txt
+   ```
 
-Usage:
-  python script.py --infile input.fasta --outfile output.txt
+## Dependencies
 
-Example:
-  python script.py --infile input.fasta --outfile output.txt
-
+Python 3
